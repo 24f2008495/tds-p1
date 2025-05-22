@@ -66,38 +66,12 @@ class QuestionRequest(BaseModel):
 async def answer_question(request: QuestionRequest):
     full_query = request.question
 
-    # Step 1: If image is provided, use GPT-4o-vision to extract text
-    if request.image:
-        try:
-            image_bytes = base64.b64decode(request.image)
-            # Configure OpenAI client with AIPIPE
-            openai.api_key = os.getenv("AIPIPE_TOKEN")
-            openai.api_base = os.getenv("AIPIPE_BASEURL")
-            
-            vision_response = openai.ChatCompletion.create(
-                model="gpt-4o",
-                messages=[
-                    {
-                        "role": "user",
-                        "content": [
-                            {"type": "text", "text": "Extract all text from this image."},
-                            {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{request.image}"}}
-                        ]
-                    }
-                ],
-                max_tokens=500
-            )
-            extracted_text = vision_response.choices[0].message.content.strip()
-            full_query += "\n\nAdditional info from image:\n" + extracted_text
-        except Exception as e:
-            return {"answer": "Failed to process image.", "error": str(e), "links": []}
-
-    # Step 2: Run RAG pipeline
+    # First get RAG results
     result = qa_chain.invoke({"query": full_query})
-    answer = result["result"]
+    context = result["result"]
     source_docs: List[Document] = result.get("source_documents", [])
 
-    # Step 3: Extract links from metadata
+    # Extract links from metadata
     links = []
     for doc in source_docs:
         if "url" in doc.metadata:
@@ -106,7 +80,47 @@ async def answer_question(request: QuestionRequest):
                 "text": doc.page_content[:200].replace("\n", " ") + "..."
             })
 
-    return {
-        "answer": answer,
-        "links": links
-    }
+    try:
+        # Configure OpenAI client with AIPIPE
+        client = openai.OpenAI(
+            api_key=os.getenv("AIPIPE_TOKEN"),
+            base_url=os.getenv("AIPIPE_BASEURL"),
+        )
+        
+        # Create a prompt that includes both the RAG context and the original query
+        prompt = f"""Based on the following context and question, please provide a comprehensive answer. 
+        Consider both the text information and the attached image(if present) in your response.
+
+        Context from knowledge base:
+        {context}
+
+        Original question:
+        {full_query}
+        """
+        
+        # Prepare the message content
+        message_content = [{"type": "text", "text": prompt}]
+        
+        # Add image if provided
+        if request.image:
+            message_content.append({
+                "type": "image_url",
+                "image_url": {"url": f"data:image/png;base64,{request.image}"}
+            })
+        
+        response = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {
+                    "role": "user",
+                    "content": message_content
+                }
+            ],
+            max_tokens=500
+        )
+        return {
+            "answer": response.choices[0].message.content.strip(),
+            "links": links
+        }
+    except Exception as e:
+        return {"answer": "Failed to process request.", "error": str(e), "links": links}

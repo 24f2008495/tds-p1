@@ -3,7 +3,7 @@ description: "TDS Virtual TA Project Sample (but not the actual evaluation) Ques
 providers:
   - id: https
     config:
-      url: https://app.example.com/api/ # Replace this with your API endpoint
+      url: http://0.0.0.0:8000/api/
       method: POST
       headers:
         Content-Type: application/json
@@ -35,7 +35,7 @@ defaultTest:
 tests:
   - vars:
       question: The question asks to use gpt-3.5-turbo-0125 model but the ai-proxy provided by Anand sir only supports gpt-4o-mini. So should we just use gpt-4o-mini or use the OpenAI API for gpt3.5 turbo?
-      image: file://project-tds-virtual-ta-q1.webp
+      image: ./project-tds-virtual-ta-q1.webp
       link: https://discourse.onlinedegree.iitm.ac.in/t/ga5-question-8-clarification/155939
     assert:
       - type: llm-rubric
