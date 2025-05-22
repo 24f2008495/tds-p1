@@ -1,0 +1,16 @@
+requests
+beautifulsoup4
+langchain
+openai
+chromadb
+tiktoken
+json
+langchain-community
+langchain-openai
+fastapi
+uvicorn
+python-multipart
+langchain-chroma
+python-dotenv
+pydantic
+bs4

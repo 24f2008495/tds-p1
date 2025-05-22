@@ -1,0 +1,559 @@
+[
+  {
+    "text": "Tools in Data Science",
+    "link": "README.md",
+    "children": []
+  },
+  {
+    "text": "1. Development Tools",
+    "link": "development-tools.md",
+    "children": [
+      {
+        "text": "Editor: VS Code",
+        "link": "vscode.md",
+        "children": []
+      },
+      {
+        "text": "AI Code Editors: GitHub Copilot",
+        "link": "github-copilot.md",
+        "children": []
+      },
+      {
+        "text": "Python tools: uv",
+        "link": "uv.md",
+        "children": []
+      },
+      {
+        "text": "JavaScript tools: npx",
+        "link": "npx.md",
+        "children": []
+      },
+      {
+        "text": "Unicode",
+        "link": "unicode.md",
+        "children": []
+      },
+      {
+        "text": "Browser: DevTools",
+        "link": "devtools.md",
+        "children": []
+      },
+      {
+        "text": "CSS Selectors",
+        "link": "css-selectors.md",
+        "children": []
+      },
+      {
+        "text": "JSON",
+        "link": "json.md",
+        "children": []
+      },
+      {
+        "text": "Terminal: Bash",
+        "link": "bash.md",
+        "children": []
+      },
+      {
+        "text": "AI Terminal Tools: llm",
+        "link": "llm.md",
+        "children": []
+      },
+      {
+        "text": "Spreadsheet: Excel, Google Sheets",
+        "link": "spreadsheets.md",
+        "children": []
+      },
+      {
+        "text": "Database: SQLite",
+        "link": "sqlite.md",
+        "children": []
+      },
+      {
+        "text": "Version Control: Git, GitHub",
+        "link": "git.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "text": "2. Deployment Tools",
+    "link": "deployment-tools.md",
+    "children": [
+      {
+        "text": "Markdown",
+        "link": "markdown.md",
+        "children": []
+      },
+      {
+        "text": "Images: Compression",
+        "link": "image-compression.md",
+        "children": []
+      },
+      {
+        "text": "Static hosting: GitHub Pages",
+        "link": "github-pages.md",
+        "children": []
+      },
+      {
+        "text": "Notebooks: Google Colab",
+        "link": "colab.md",
+        "children": []
+      },
+      {
+        "text": "Serverless hosting: Vercel",
+        "link": "vercel.md",
+        "children": []
+      },
+      {
+        "text": "CI/CD: GitHub Actions",
+        "link": "github-actions.md",
+        "children": []
+      },
+      {
+        "text": "Containers: Docker, Podman",
+        "link": "docker.md",
+        "children": []
+      },
+      {
+        "text": "DevContainers: GitHub Codespaces",
+        "link": "github-codespaces.md",
+        "children": []
+      },
+      {
+        "text": "Tunneling: ngrok",
+        "link": "ngrok.md",
+        "children": []
+      },
+      {
+        "text": "CORS",
+        "link": "cors.md",
+        "children": []
+      },
+      {
+        "text": "REST APIs",
+        "link": "rest-apis.md",
+        "children": []
+      },
+      {
+        "text": "Web Framework: FastAPI",
+        "link": "fastapi.md",
+        "children": []
+      },
+      {
+        "text": "Authentication: Google Auth",
+        "link": "google-auth.md",
+        "children": []
+      },
+      {
+        "text": "Local LLMs: Ollama",
+        "link": "ollama.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "text": "3. Large Language Models",
+    "link": "large-language-models.md",
+    "children": [
+      {
+        "text": "Prompt engineering",
+        "link": "prompt-engineering.md",
+        "children": []
+      },
+      {
+        "text": "TDS TA Instructions",
+        "link": "tds-ta-instructions.md",
+        "children": []
+      },
+      {
+        "text": "TDS GPT Reviewer",
+        "link": "tds-gpt-reviewer.md",
+        "children": []
+      },
+      {
+        "text": "LLM Sentiment Analysis",
+        "link": "llm-sentiment-analysis.md",
+        "children": []
+      },
+      {
+        "text": "LLM Text Extraction",
+        "link": "llm-text-extraction.md",
+        "children": []
+      },
+      {
+        "text": "Base 64 Encoding",
+        "link": "base64-encoding.md",
+        "children": []
+      },
+      {
+        "text": "Vision Models",
+        "link": "vision-models.md",
+        "children": []
+      },
+      {
+        "text": "Embeddings",
+        "link": "embeddings.md",
+        "children": []
+      },
+      {
+        "text": "Multimodal Embeddings",
+        "link": "multimodal-embeddings.md",
+        "children": []
+      },
+      {
+        "text": "Topic modeling",
+        "link": "topic-modeling.md",
+        "children": []
+      },
+      {
+        "text": "Vector databases",
+        "link": "vector-databases.md",
+        "children": []
+      },
+      {
+        "text": "RAG with the CLI)",
+        "link": "rag-cli.md",
+        "children": []
+      },
+      {
+        "text": "Hybrid RAG with TypeSense",
+        "link": "hybrid-rag-typesense.md",
+        "children": []
+      },
+      {
+        "text": "Function Calling",
+        "link": "function-calling.md",
+        "children": []
+      },
+      {
+        "text": "LLM Agents",
+        "link": "llm-agents.md",
+        "children": []
+      },
+      {
+        "text": "LLM Image Generation",
+        "link": "llm-image-generation.md",
+        "children": []
+      },
+      {
+        "text": "LLM Speech",
+        "link": "llm-speech.md",
+        "children": []
+      },
+      {
+        "text": "LLM Evals",
+        "link": "llm-evals.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "text": "Project 1",
+    "link": "project-tds-virtual-ta.md",
+    "children": []
+  },
+  {
+    "text": "4. Data Sourcing",
+    "link": "data-sourcing.md",
+    "children": [
+      {
+        "text": "Scraping with Excel",
+        "link": "scraping-with-excel.md",
+        "children": []
+      },
+      {
+        "text": "Scraping with Google Sheets",
+        "link": "scraping-with-google-sheets.md",
+        "children": []
+      },
+      {
+        "text": "Crawling with the CLI",
+        "link": "crawling-cli.md",
+        "children": []
+      },
+      {
+        "text": "BBC Weather API with Python",
+        "link": "bbc-weather-api-with-python.md",
+        "children": []
+      },
+      {
+        "text": "Scraping IMDb with JavaScript",
+        "link": "scraping-imdb-with-javascript.md",
+        "children": []
+      },
+      {
+        "text": "Nominatim API with Python",
+        "link": "nominatim-api-with-python.md",
+        "children": []
+      },
+      {
+        "text": "Wikipedia Data with Python",
+        "link": "wikipedia-data-with-python.md",
+        "children": []
+      },
+      {
+        "text": "Scraping PDFs with Tabula",
+        "link": "scraping-pdfs-with-tabula.md",
+        "children": []
+      },
+      {
+        "text": "Convert PDFs to Markdown",
+        "link": "convert-pdfs-to-markdown.md",
+        "children": []
+      },
+      {
+        "text": "Convert HTML to Markdown",
+        "link": "convert-html-to-markdown.md",
+        "children": []
+      },
+      {
+        "text": "LLM Website Scraping",
+        "link": "llm-website-scraping.md",
+        "children": []
+      },
+      {
+        "text": "LLM Video Screen-Scraping",
+        "link": "llm-video-screen-scraping.md",
+        "children": []
+      },
+      {
+        "text": "Web Automation with Playwright",
+        "link": "web-automation-with-playwright.md",
+        "children": []
+      },
+      {
+        "text": "Scheduled Scraping with GitHub Actions",
+        "link": "scheduled-scraping-with-github-actions.md",
+        "children": []
+      },
+      {
+        "text": "Scraping emarketer.com",
+        "link": "scraping-emarketer.md",
+        "children": []
+      },
+      {
+        "text": "Scraping: Live Sessions",
+        "link": "scraping-live-sessions.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "text": "5. Data Preparation",
+    "link": "data-preparation.md",
+    "children": [
+      {
+        "text": "Data Cleansing in Excel",
+        "link": "data-cleansing-in-excel.md",
+        "children": []
+      },
+      {
+        "text": "Data Transformation in Excel",
+        "link": "data-transformation-in-excel.md",
+        "children": []
+      },
+      {
+        "text": "Splitting Text in Excel",
+        "link": "splitting-text-in-excel.md",
+        "children": []
+      },
+      {
+        "text": "Data Aggregation in Excel",
+        "link": "data-aggregation-in-excel.md",
+        "children": []
+      },
+      {
+        "text": "Data Preparation in the Shell",
+        "link": "data-preparation-in-the-shell.md",
+        "children": []
+      },
+      {
+        "text": "Data Preparation in the Editor",
+        "link": "data-preparation-in-the-editor.md",
+        "children": []
+      },
+      {
+        "text": "Cleaning Data with OpenRefine",
+        "link": "cleaning-data-with-openrefine.md",
+        "children": []
+      },
+      {
+        "text": "Profiling Data with Python",
+        "link": "profiling-data-with-python.md",
+        "children": []
+      },
+      {
+        "text": "Parsing JSON",
+        "link": "parsing-json.md",
+        "children": []
+      },
+      {
+        "text": "Data Transformation with dbt",
+        "link": "dbt.md",
+        "children": []
+      },
+      {
+        "text": "Transforming Images",
+        "link": "transforming-images.md",
+        "children": []
+      },
+      {
+        "text": "Extracting Audio and Transcripts",
+        "link": "extracting-audio-and-transcripts.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "text": "6. Data Analysis",
+    "link": "data-analysis.md",
+    "children": [
+      {
+        "text": "Correlation with Excel",
+        "link": "correlation-with-excel.md",
+        "children": []
+      },
+      {
+        "text": "Regression with Excel",
+        "link": "regression-with-excel.md",
+        "children": []
+      },
+      {
+        "text": "Forecasting with Excel",
+        "link": "forecasting-with-excel.md",
+        "children": []
+      },
+      {
+        "text": "Outlier Detection with Excel",
+        "link": "outlier-detection-with-excel.md",
+        "children": []
+      },
+      {
+        "text": "Data Analysis with Python",
+        "link": "data-analysis-with-python.md",
+        "children": []
+      },
+      {
+        "text": "Data Analysis with SQL",
+        "link": "data-analysis-with-sql.md",
+        "children": []
+      },
+      {
+        "text": "Data Analysis with Datasette",
+        "link": "data-analysis-with-datasette.md",
+        "children": []
+      },
+      {
+        "text": "Data Analysis with DuckDB",
+        "link": "data-analysis-with-duckdb.md",
+        "children": []
+      },
+      {
+        "text": "Data Analysis with ChatGPT",
+        "link": "data-analysis-with-chatgpt.md",
+        "children": []
+      },
+      {
+        "text": "Geospatial Analysis with Excel",
+        "link": "geospatial-analysis-with-excel.md",
+        "children": []
+      },
+      {
+        "text": "Geospatial Analysis with Python",
+        "link": "geospatial-analysis-with-python.md",
+        "children": []
+      },
+      {
+        "text": "Geospatial Analysis with QGIS",
+        "link": "geospatial-analysis-with-qgis.md",
+        "children": []
+      },
+      {
+        "text": "Network Analysis in Python",
+        "link": "network-analysis-in-python.md",
+        "children": []
+      }
+    ]
+  },
+  {
+    "text": "- Project 2",
+    "link": null,
+    "children": []
+  },
+  {
+    "text": "7. Data Visualization",
+    "link": "data-visualization.md",
+    "children": [
+      {
+        "text": "Visualizing Forecasts with Excel",
+        "link": "visualizing-forecasts-with-excel.md",
+        "children": []
+      },
+      {
+        "text": "Visualizing Animated Data with PowerPoint",
+        "link": "visualizing-animated-data-with-powerpoint.md",
+        "children": []
+      },
+      {
+        "text": "Visualizing Animated Data with Flourish",
+        "link": "visualizing-animated-data-with-flourish.md",
+        "children": []
+      },
+      {
+        "text": "Visualizing Network Data with Kumu",
+        "link": "visualizing-network-data-with-kumu.md",
+        "children": []
+      },
+      {
+        "text": "Visualizing Charts with Excel",
+        "link": "visualizing-charts-with-excel.md",
+        "children": []
+      },
+      {
+        "text": "Data Visualization with Seaborn",
+        "link": "data-visualization-with-seaborn.md",
+        "children": []
+      },
+      {
+        "text": "Data Visualization with ChatGPT",
+        "link": "data-visualization-with-chatgpt.md",
+        "children": []
+      },
+      {
+        "text": "Actor Network Visualization",
+        "link": "actor-network-visualization.md",
+        "children": []
+      },
+      {
+        "text": "RAWgraphs",
+        "link": "rawgraphs.md",
+        "children": []
+      },
+      {
+        "text": "Data Storytelling",
+        "link": "data-storytelling.md",
+        "children": []
+      },
+      {
+        "text": "Narratives with LLMs",
+        "link": "narratives-with-llms.md",
+        "children": []
+      },
+      {
+        "text": "Interactive Notebooks: Marimo",
+        "link": "marimo.md",
+        "children": []
+      },
+      {
+        "text": "HTML Slides: RevealJS",
+        "link": "revealjs.md",
+        "children": []
+      },
+      {
+        "text": "Markdown Presentations: Marp",
+        "link": "marp.md",
+        "children": []
+      }
+    ]
+  }
+]
