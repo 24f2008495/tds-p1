@@ -1,9 +1,9 @@
 description: "TDS Virtual TA Project Sample (but not the actual evaluation) Questions"
 
 providers:
-  - id: https
+  - id: http
     config:
-      url: http://0.0.0.0:8000/api/
+      url: http://localhost:8000/api/
       method: POST
       headers:
         Content-Type: application/json

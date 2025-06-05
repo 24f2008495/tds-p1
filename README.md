@@ -30,8 +30,8 @@ This system scrapes course content and discourse posts, creates embeddings, and 
 4. **Set up environment variables**
    Create a `.env` file in the root directory with:
    ```
-   AIPIPE_TOKEN=your_aipipe_token
-   AIPIPE_BASEURL=your_aipipe_baseurl
+   OPENAI_KEY=your_aipipe_token
+   OPENAI_BASE_URL=your_aipipe_baseurl
    ```
 
 ## Data Collection and Processing
@@ -62,7 +62,7 @@ This system scrapes course content and discourse posts, creates embeddings, and 
 
 1. **Start the FastAPI server**
    ```bash
-   uvicorn app:app --reload
+   python app.py
    ```
    The server will start at `http://localhost:8000`
 
@@ -78,6 +78,9 @@ This system scrapes course content and discourse posts, creates embeddings, and 
    The response will include:
    - `answer`: The generated answer
    - `links`: Relevant source links with snippets
+
+3. **Evaluate**
+   ```cd promptfoo & promptfoo eval --config project-tds-virtual-ta-promptfoo.yaml --no-cache```
 
 ## Project Structure
 
