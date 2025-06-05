@@ -119,3 +119,9 @@ This system scrapes course content and discourse posts, creates embeddings, and 
    - Verify internet connection
    - Check if the source URLs are accessible
    - Ensure you have necessary permissions 
+
+Server Side Stuff - my own reference
+1. to watch logs
+```sudo journalctl -u fastapi -f```
+2. to stop daemon
+```sudo systemctl stop fastapi```

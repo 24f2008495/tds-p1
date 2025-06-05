@@ -3,7 +3,7 @@ description: "TDS Virtual TA Project Sample (but not the actual evaluation) Ques
 providers:
   - id: http
     config:
-      url: http://localhost:8000/api/
+      url: https://api.dhruvagoyal.com/api
       method: POST
       headers:
         Content-Type: application/json

@@ -200,6 +200,9 @@ async def answer_question(request: QuestionRequest):
         Original question(repeated again for clarity):
         {full_query}
 
+        NOTE:
+        - Your knowledge base only contains Course content with content for TDS Jan 2025 as on 15 Apr 2025 and TDS Discourse posts with content from 1 Jan 2025 - 14 Apr 2025. Any questions that require data that is out of bounds of these dates, reply with "I am not sure about the answer to this question with my current knowledge base
+
         RULES
         1. Every factual statement in "answer" must be traceable to the supplied KNOWLEDGE_BASE.  
         2. Cite with links[]. Each link object must correspond to a source actually present in KNOWLEDGE_BASE.  
