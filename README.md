@@ -2,6 +2,8 @@
 
 This system scrapes course content and discourse posts, creates embeddings, and provides a RAG-based question answering system.
 
+> **Bonus Feature**: The system includes a date-range based Discourse scraper (`discourse_scraper.py`) that can scrape posts from any Discourse course page within a specified date range. This feature was implemented for bonus marks in the project. Please modify start_date and end_date variables in this file to achieve outcome
+
 ## Prerequisites
 
 - Python 3.8 or higher
@@ -100,7 +102,7 @@ This system scrapes course content and discourse posts, creates embeddings, and 
 - The `chroma_store` directory is git-ignored as it can be regenerated
 - Large data files (`discourse_contents.json` and `course_structure.json`) are included in the repository
 - The system uses AIPIPE for embeddings and LLM access
-- Image processing is supported through GPT-4 Vision API
+- Final answer processing is supported through GPT-4.1
 
 ## Troubleshooting
 
